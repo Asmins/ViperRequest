@@ -1,0 +1,6 @@
+framework module Pods_ViperRequest {
+  umbrella header "Pods-ViperRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}
