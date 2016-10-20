@@ -18,33 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gfg-N6-3hj">
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PSB-F6-9QS">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Aos-sB-cll"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="hPI-mC-xoS" detailTextLabel="hsF-EA-iZb" style="IBUITableViewCellStyleSubtitle" id="XpM-qz-HEk">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XpM-qz-HEk" id="LzN-fx-eIU">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hPI-mC-xoS">
-                                                    <frame key="frameInset" minX="15" minY="4" width="34" height="21"/>
+                                                    <frame key="frameInset" minX="15" minY="5" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hsF-EA-iZb">
-                                                    <frame key="frameInset" minX="15" minY="25" width="44" height="15"/>
+                                                    <frame key="frameInset" minX="15" minY="25.5" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -58,18 +50,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gfg-N6-3hj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="9m7-Hj-JCa"/>
+                            <constraint firstItem="PSB-F6-9QS" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="7Bj-n5-efP"/>
                             <constraint firstItem="PSB-F6-9QS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FwK-lx-mdM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PSB-F6-9QS" secondAttribute="bottom" id="QzB-pX-Cvh"/>
-                            <constraint firstItem="gfg-N6-3hj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RFv-6o-ohZ"/>
-                            <constraint firstItem="gfg-N6-3hj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cUt-xy-5Rm"/>
-                            <constraint firstAttribute="trailing" secondItem="gfg-N6-3hj" secondAttribute="trailing" constant="20" id="pKP-hm-mj3"/>
+                            <constraint firstItem="PSB-F6-9QS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ea4-ew-FaX"/>
                             <constraint firstAttribute="trailing" secondItem="PSB-F6-9QS" secondAttribute="trailing" id="ujQ-7v-fqD"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="PSB-F6-9QS" id="gEW-SY-xJ8"/>
-                        <outlet property="textField" destination="gfg-N6-3hj" id="BxK-T2-Icw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
