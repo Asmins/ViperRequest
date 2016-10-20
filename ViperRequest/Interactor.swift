@@ -26,7 +26,8 @@ class Interactor {
     }
     */
     
-    func show(service:Service) {
+    func show() {
+        let service = Service()
         self.service = service
         data = self.token.asObservable().throttle(0.1, scheduler: MainScheduler.instance).distinctUntilChanged()
         .flatMapLatest{

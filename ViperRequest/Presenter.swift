@@ -17,12 +17,7 @@ class Presenter {
     var service = Service()
     
     func show(tableView:UITableView) {
-        //interactor = Interactor(service: service)
-        interactor.show(service: service)
+        interactor.show()
         data = interactor.data
-      /*  self.interactor?.data?.drive(tableView.rx.items(cellIdentifier: "Cell")) {_,user,cell in
-            print(user.userName)
-            print(user.userNickName)
-        }*/
     }
 }
